@@ -1,5 +1,5 @@
-dotfiles_repository: pivovarit/dotfiles
-login_window_text: gpiwowarek@gmail.com
+dotfiles_repository: kaczuss/dotfiles
+login_window_text: pawel.kaczanowski@gmail.com
 dock_icon_size: 55
 dev_directory_name: Dev
 
@@ -12,51 +12,22 @@ homebrew:
   - docker
   - docker-compose
   - git
-  - gnupg
-  - gnutls
-  - hub
   - htop
   - jenv
   - jq
   - make
   - maven
-  - mysql
-  - neofetch
-  - nmap
-  - node
-  - pkg-config
-  - pstree
   - python
-  - ruby
-  - rust
-  - sbt
-  - scala
-  - siege
-  - sysdig
-  - tree
   - wget
-  - wrk
-  - yadm
-  - watch
-  - zlib
   - zsh
 
 homebrew_cask:
-  - rectangle
-  - atom
   - docker
   - google-chrome
-  - google-hangouts
+  - firefox
   - iterm2
   - jetbrains-toolbox
   - jprofiler
-  - karabiner-elements
-  - slack
-  - spotify
-  - sysdig-inspect
-  - virtualbox
-  - vlc
-  - wireshark
 
 dockitems_to_remove:
   - Contacts
@@ -71,13 +42,5 @@ dockitems_to_remove:
   - Siri
 
 github_projects:
-  - pivovarit/parallel-collectors
-  - pivovarit/articles
-  - pivovarit/es-collections
-  - pivovarit/throwing-function
-  - pivovarit/thread-factory
-  - pivovarit/pivovarit.github.io
-  - pivovarit/mac-os-playbook
-  - openjdk/jdk
-  - torvalds/linux
+  - kaczuss/mac-os-playbook
 
