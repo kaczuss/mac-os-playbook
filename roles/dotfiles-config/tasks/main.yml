@@ -27,7 +27,18 @@
     state: link
     force: yes
   loop:
+    - { src: "{{ ansible_env.HOME }}/dotfiles/.zshrc", dest: "{{ ansible_env.HOME }}/.zshrc" }
     - { src: "{{ ansible_env.HOME }}/dotfiles/.gitconfig", dest: "{{ ansible_env.HOME }}/.gitconfig"}
+    - { src: "{{ ansible_env.HOME }}/dotfiles/.gitrc", dest: "{{ ansible_env.HOME }}/.gitrc" }
+
+- name: Source dotfiles in .zshrc
+  lineinfile:
+    dest: ~/.zshrc
+    regexp: "{{ item }}"
+    line: "source $HOME/{{ item }}"
+    state: present
+  with_items:
+    - '.gitrc'
 
 - name: Setup dotfiles Sync
   include: dotfiles-sync.yml
