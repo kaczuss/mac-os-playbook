@@ -17,7 +17,8 @@ homebrew:
   - jq
   - make
   - maven
-  - python
+  - python3
+  - pyenv
   - wget
   - zsh
 
