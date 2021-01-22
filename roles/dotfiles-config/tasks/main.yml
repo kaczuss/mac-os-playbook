@@ -30,6 +30,7 @@
     - { src: "{{ ansible_env.HOME }}/dotfiles/.zshrc", dest: "{{ ansible_env.HOME }}/.zshrc" }
     - { src: "{{ ansible_env.HOME }}/dotfiles/.gitconfig", dest: "{{ ansible_env.HOME }}/.gitconfig"}
     - { src: "{{ ansible_env.HOME }}/dotfiles/.gitrc", dest: "{{ ansible_env.HOME }}/.gitrc" }
+    - { src: "{{ ansible_env.HOME }}/dotfiles/.p10k.zsh", dest: "{{ ansible_env.HOME }}/.p10k.zsh"}
 
 - name: Source dotfiles in .zshrc
   lineinfile:
